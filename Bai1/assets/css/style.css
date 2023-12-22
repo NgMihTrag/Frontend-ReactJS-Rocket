@@ -1,0 +1,533 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif
+    
+}
+#main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.lp_container,
+.rp_container{
+    flex: 1;
+}
+
+/* bên trái page */
+#left_page{
+    /* display: flex; */
+    width: 30%;
+    /* background-color: #68A0FF; 
+    background-blend-mode: hue; */
+    background: linear-gradient(to bottom, #6666FF,#9999FF);
+
+
+}
+#left_page .lp_container{
+    /* border-radius: 3px; */
+    background-color: white;
+    margin: 100px 0 100px 100px;
+    border-radius: 10px 0 0 10px;
+    border-top:2px solid #A0A0A0 ;
+    border-right:1px solid #A0A0A0 ;
+    border-bottom:2px solid #A0A0A0 ;
+    border-left:2px solid #A0A0A0 ;
+}
+#left_page .lp_container .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-bottom: 2px solid #A0A0A0;
+    border-radius: 10px 0 0 0;
+    
+ }
+
+/* INFO */
+ .info{
+    display: flex;
+    flex-direction: column;
+    padding:30px 0 20px 0; 
+    border-bottom: 2px solid #A0A0A0;
+ }
+.avatar_container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+  
+.avatar {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.name{
+    margin-top: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.gmail{
+    margin-top: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 20px;
+    color:#606060;
+}
+.menu{
+    margin:20px 60px 15px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* width: 300px; */
+}
+.button{
+    width: 50px; /* Điều chỉnh kích thước theo yêu cầu của bạn */
+    height: 50px; /* Điều chỉnh kích thước theo yêu cầu của bạn */
+    border-radius: 50%;
+    background-color:#F7F7F7; /* Màu nền của nút */
+    color: #3399FF; /* Màu chữ trên nút */
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    background-color:#3399FF ;
+    color: #F7F7F7;
+}
+.menu .button .badge {
+    position:absolute ;
+    margin-left: 33px;
+    margin-bottom: 33px;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+.progress-container {
+    position: relative;
+    width: 80%; /* Điều chỉnh chiều rộng của thanh tiến trình */
+    height: 16%; /* Điều chỉnh chiều cao của thanh tiến trình */
+    background-color: #F7F7F7; /* Màu nền của thanh tiến trình */
+    border-radius: 10px; /* Độ cong của góc thanh tiến trình */
+    overflow: hidden; /*Loại bỏ phần tiến trình vượt ra ngoài container */
+  }
+  
+.progress-bar {
+    position: absolute;
+    height: 100%;
+    background-color: #3399FF; /* Màu của thanh tiến trình */
+}
+.level{
+    position:absolute ;
+    padding:0 0 2% 16%;
+    color: #606060;
+    font-size: 12px;
+}
+
+
+
+.info_task{
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.info_task .list{
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.info_task .number{
+    font-weight: 700;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+.info_task .text{
+    margin-top: 5px;
+    color: #606060;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* Projects */
+.projects{
+    padding: 30px 0 20px 30px;
+    border-bottom: 2px solid #A0A0A0;
+}
+.header_projects{
+    font-size: larger;
+    /* margin-left: 30px; */
+}
+.radio_container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sub_radio{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.text_sub{
+    margin-left: 15px;
+    font-size: 15px;
+    color: #606060;
+}
+
+/* TEAM */
+.team{
+    padding: 30px 0 20px 30px;
+    border-radius: 0 0 0 10px;
+}
+.header_team{
+    text-transform: uppercase;
+    font-size: larger;
+}
+.avatar-container_team{
+    margin:20px 50px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sub_avatar{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+  
+.avatar_team {
+    /* margin-left: 165px; */
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%;
+    object-fit: cover; /* Đảm bảo hình ảnh đủ kích thước trong hình tròn */
+}
+
+
+
+
+  
+
+
+
+/* bên phải page */
+#right_page{
+    /* display: flex; */
+    /* flex: 1; */
+    width: 70%;
+    background-color: #9CC1FF;
+    background: linear-gradient(to bottom, #9999FF,#6666FF);
+    
+}
+#right_page .rp_container{
+    /* background-color: white; */
+    /* flex: 1; */
+    margin: 100px 100px 100px 0;
+    border-radius:0 10px 10px 0;
+    border-top:2px solid #A0A0A0 ;
+    border-right:2px solid #A0A0A0 ;
+    border-bottom:2px solid #A0A0A0 ;
+    border-left:1px solid #A0A0A0 ;
+
+}
+.header{
+    border-radius: 0 10px 0 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 2px solid #A0A0A0;
+}
+.text_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 20%; */
+
+}
+.text{
+
+}
+#right_page .header .search_box {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+  }
+
+#right_page .header .search_input {
+    flex: 1;
+    background-color: #F5F8FF;
+    padding: 10px;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+  }
+
+.more{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 20%; */
+
+}
+
+.container_rp{
+    height: 829px;
+    background-color: #E5E5E5 ;
+    border-radius: 0 0 10px 0;
+}
+.navmenu{
+    padding: 40px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.button_group {
+    display: flex;
+    width: 226px;
+}
+
+.button1 {
+    padding: 7px 15px;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+}
+.button1:hover{
+    transform: scale(1.05);
+}
+.button2 {
+    margin: 0 10px 0 10px;
+    padding: 7px 15px;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+    border-radius:30px;
+    border:2px solid #A0A0A0;
+    color: #A0A0A0;
+}
+.button2:hover{
+    transform: scale(1.05);
+}
+.calendar__switch--month{
+    /* width: 33.33%; */
+    text-align: center;
+}
+
+.calendar__switch--m-btn{
+    background-color: inherit;
+    cursor: pointer;
+} 
+.calendar__month{
+    font-weight: 700;
+}
+
+.calendar__year{
+    font-size: 10px;
+    opacity: 0.7;
+    line-height: 1.5;
+    font-weight: 700;
+
+}
+
+.task_container{
+    margin: 5% 5% 0 5%;
+    /* display: flex; */
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.calendar__month--container{
+    margin: 24px 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.calendar__day--col{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.calendar__day--row{
+    width: 100%;
+    display: flex;
+}
+
+.calendar__day-of-week{
+    width: 20%;
+    padding: 16px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(199, 199, 199);
+    color: gray;
+    font-weight: 700;
+}
+.calendar__day--container{
+    position: relative;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 6em;
+    background-color: white;
+    border: 1px solid rgb(199, 199, 199);
+    color: black;
+}
+.calendar__day--container:hover{
+    background-color: #3399FF 
+    !important;
+}
+.calendar__day{
+    /* width: 100%; */
+    padding: 16px;
+    text-align: left;
+    
+    font-weight: 900;
+    
+    /* transition: width 1s, height 1s; */
+}
+
+
+.calendar__day--task{
+    padding: 0px 24px;
+    font-size: 0.6rem;
+}
+
+.calendar__weekend{
+    display: none;
+}
+
+.calendar__weekday{
+    display: block;
+}
+/* add task */
+.calendar__add-task--container{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 400px;
+    transform: translate(0%, -25%);
+    right: 1%;
+    padding: 24px;
+    z-index: 1;
+    width: 22%;
+    height: auto;
+    background-color: white;
+    border: 00.5px solid rgb(211, 209, 209);
+    align-self: flex-end;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.calendar__add-task--row{
+    position: relative;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.calendar__add-task--category-btn{
+    border: none;
+    border-radius: 16px;
+    padding: 4px 8px;
+    color: white;
+    background-color: rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+.calendar__add-task--date{
+    position: absolute;
+    font-size: 10px;
+    right: 0;
+}
+
+.calendar__add-task--title-input{
+    border: none;
+    margin: 0 1rem;
+    font-size: 20px;
+    width: 90%;
+    font-weight: bolder;
+}
+
+.calendar__add-task--des-input{
+    border: none;
+    margin: 0 3rem;
+    width: 80%;
+    font-weight: 700;
+}
+
+.calendar__add-task-btn{  
+    border-radius: 16px;
+    padding: 6px 16px;
+    border: 1px solid gray !important;
+    color: gray;
+    background-color: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.alignRight{
+    display: flex;
+    justify-content: end;
+}
+
+.calendar__category--container{
+    display: none;
+    padding: 24px;
+    position: absolute;
+    background-color: aliceblue;
+    top: 32%;
+    transform: translate(0%, -25%);
+    right: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 16px;
+}
+
+.calendar__category--radio{
+    margin: 8px;
+}
+
+.calendar__check-btn{
+    border: none;
+    width: fit-content;
+    background-color: inherit;
+}
+
+

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 1: HTML,CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="./assets/js/script.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="main">
+    <div id="left_page">
+        <div class="lp_container">
+            <div class="header">
+                <p style="  text-transform: uppercase;font-weight: bold;color: gray;">Task manager</p>
+            </div>
+            <div class="info">
+                <div class="avatar_container">
+                    <img src="assets/img/2023_10_22_08_00_IMG_3202.JPG" alt="User Avatar" class="avatar">
+                </div>
+                <div class="name">
+                    Nguyễn Minh Tráng
+                </div>
+                <div class="gmail">
+                    trang.2663@gmail.com
+                </div>
+                <div class="menu">
+                    <button class="button">
+                        <i class="material-icons">settings </i>
+                    </button>
+                    <button class="button">
+                        <span class="badge">2</span>
+                        <i class="material-icons">email</i>
+                    </button>
+                    <button class="button">
+                        <span class="badge">6</span>
+                        <i class="material-icons">notifications</i>
+                    </button>                   
+                    
+                </div>
+                <div class="progress">
+                    <span class="level">12/34</span>
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 35.294117647%;"></div>
+                    </div>
+                    
+
+                </div>
+                <div class="info_task">
+                    <div class="list">
+                        <p class="number">12</p>
+                        <p class="text">Completed <br> tasks</p>
+                    </div>
+                    <div class="list">
+                        <p class="number">22</p>
+                        <p class="text">To do <br> tasks</p>
+                    </div>
+                    <div class="list">
+                        <p class="number">69</p>
+                        <p class="text">All <br> completed</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <p class="header_projects" style="text-transform: uppercase">
+                    Projects
+                </p>
+                <div class="radio_container">
+                    <div class="sub_radio">
+                        <i class="material-icons" style="color:#FF00FF;font-size: 20px;">radio_button_unchecked</i>
+                        <p class="text_sub">Marketing</p>
+                    </div>
+                    <div class="sub_radio">
+                        <i class="material-icons" style="color:#7F00FF;font-size: 20px">radio_button_unchecked</i>
+                        <p class="text_sub">Design</p>
+                    </div>
+                    <div class="sub_radio">
+                        <i class="material-icons" style="color: yellow;font-size: 20px">radio_button_unchecked</i>
+                        <p class="text_sub">Development</p>
+                    </div>
+                    <div class="sub_radio">
+                        <i class="material-icons" style="color: red;font-size: 20px">radio_button_unchecked</i>
+                        <p class="text_sub">Finance</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="team">
+                <p class="header_team" >
+                    Team
+                </p>
+                <div class="avatar-container_team">
+                    <div class="sub_avatar">
+                        <img src="assets/img/2023_10_22_08_00_IMG_3202.JPG" alt="User Avatar" class="avatar_team">
+                    </div>
+                    <div class="sub_avatar">
+                        <img src="assets/img/2023_10_22_08_00_IMG_3202.JPG" alt="User Avatar" class="avatar_team">
+                    </div>
+                    <div class="sub_avatar">
+                        <img src="assets/img/2023_10_22_08_00_IMG_3202.JPG" alt="User Avatar" class="avatar_team">
+                    </div>
+                    <div class="sub_avatar">
+                        <img src="assets/img/2023_10_22_08_00_IMG_3202.JPG" alt="User Avatar" class="avatar_team">
+                    </div>
+                    <div class="sub_avatar">
+                        <img src="assets/img/2023_10_22_08_00_IMG_3202.JPG" alt="User Avatar" class="avatar_team">
+                    </div>
+
+                </div>
+                
+    
+            </div> 
+        </div> <!--/container/ -->
+    </div><!--left_page-->
+    
+    <div id="right_page">
+        <div class="rp_container">
+            <div class="header">
+                <div class="search_box">
+                    
+                    <input type="text" class="search_input"   placeholder="Search..." >
+                </div>
+                <div class="text_box">
+                    <p class="text"  style="  text-transform: uppercase;font-weight: bold;color: black;">Calendar</p>
+                </div>
+                <div class="more">
+
+                    <i class="material-icons" 
+                        style="color:#A0A0A0;
+                            font-size:40px;
+                            margin-left: 100%;
+                            
+                        ">
+                        more_horiz_icon 
+                    </i>
+                </div>
+            </div>
+            <div class="container_rp">
+                <div class="navmenu">
+                    <div class="button_group" >
+                        <button class="button1" id="left" 
+                                style="border-top-left-radius:30px;
+                                        border-bottom-left-radius:30px;
+                                        border:2px solid #3498db;
+                                        background-color: #3498db;
+                                        color: #FFf;" 
+                                        >
+                            Week
+                        </button>
+                        <button class="button1" if="right"
+                                style="border-top-right-radius:30px;
+                                        border-bottom-right-radius:30px;
+                                        border:2px solid #3498db;
+                                        background-color: #fff;
+                                        color:#3498db ;">
+                            Month
+                        </button>
+ 
+                    </div>
+                    
+                    <div class="calendar__switch--month">
+                        <button class="calendar__switch--m-btn" id="prev-btn" onclick="changeMonth(1)" value = ""><i class="fa fa-chevron-left"></i></button>
+                        <span class="calendar__month"></span>
+                        <button class="calendar__switch--m-btn" id="next-btn" onclick="changeMonth(2)" value = ""><i class="fa fa-chevron-right"></i></button>
+                        <p class="calendar__year" ></p>
+                    </div>
+
+                    <div class="button-group">
+                        <button class="button2" 
+                                onclick="changetoWeekendorWeekday()">
+
+                            Weekends
+                        </button>
+                        <button class="button2"
+                                onclick="addTaskSwitch()">
+                            Add task
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="task_container">
+                    <div class="calendar__month--container">
+                        <!-- add Task -->
+                        <!-- <form> -->
+                        <div class="calendar__add-task--container">
+                            <div class="calendar__add-task--row">
+                            <button class="calendar__add-task--category-btn" onclick="Set_Category()"><i class="fa fa-plus"></i> Category</button>
+                            <div class="tab" style="padding: 0 1.8rem;"></div>
+                            <!-- <i class="fa fa-calendar" style="margin: 0 0 0 2rem;"></i> -->
+                            <span class="calendar__add-task--date"></span>
+                            </div>
+                            <div class="calendar__add-task--row" style="font-size: 32px;">
+                                <button class="calendar__check-btn"><i class="fa fa-check-circle-o" style="font-size: 2rem;"></i></button>
+                                <input class="calendar__add-task--title-input" type="text" placeholder="Title of the task">
+                            </div>
+                            <div class="calendar__add-task--row"> <input class="calendar__add-task--des-input" type="text" placeholder="Description..."></div>
+                            <div class="calendar__add-task--row alignRight"> 
+                                <button class="calendar__add-task-btn" onclick="SaveTask()" >Add task</button>
+                            </div>
+                        </div>
+                        <!-- </form> -->
+                        <!-- choose category -->
+                        <div class="calendar__category--container">
+                            <form name="choose_cat" onchange="SaveCategory()">
+                                <input type="radio" name="category" class="calendar__category--radio" value="Marketing">
+                                <label class="calendar__category--radio" for="Marketing">Marketing</label><br>
+                                <input type="radio" name="category" class="calendar__category--radio" value="Design">
+                                <label class="calendar__category--radio" for="Design">Design</label><br>
+                                <input type="radio" name="category" class="calendar__category--radio" value="Development">
+                                <label class="calendar__category--radio" for="Development">Development</label><br>
+                                <input type="radio" name="category" class="calendar__category--radio" value="Finance">
+                                <label class="calendar__category--radio" for="Finance">Finance</label><br>
+                            </form>
+                        </div>
+                        <!-- calendar -->
+                        <div class="calendar__day--row">
+                            <div class="calendar__day-of-week calendar__weekday">Monday</div>
+                            <div class="calendar__day-of-week calendar__weekday">Tueday</div>
+                            <div class="calendar__day-of-week calendar__weekday">Wednesday</div>
+                            <div class="calendar__day-of-week calendar__weekday">Thursday</div>
+                            <div class="calendar__day-of-week calendar__weekday">Friday</div>
+                            <div class="calendar__day-of-week calendar__weekend">Saturday</div>
+                            <div class="calendar__day-of-week calendar__weekend">Sunday</div>
+                        </div>
+                        <div class="calendar__day--row">
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>  
+                        </div>
+                        <div class="calendar__day--row">
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>  
+                        </div>
+                        <div class="calendar__day--row">
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>  
+                        </div>
+                        <div class="calendar__day--row">
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>  
+                        </div>
+                        <div class="calendar__day--row">
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekday">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>
+                            <div class="calendar__day--container calendar__weekend">
+                                <div class="calendar__day "></div>
+                                <div class="calendar__day--task"></div>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // set tháng và năm theo lịch hiện tại
+    const date = new Date();
+    Set_Month(date.getMonth());   
+    const y = document.querySelector("p.calendar__year");
+    const prev = document.getElementById("prev-btn");
+    const next = document.getElementById("next-btn");
+    prev.value = date.getMonth();
+    next.value = date.getMonth();
+    y.innerHTML = date.getFullYear();
+    Set_Day(date.getMonth(), date.getFullYear());
+
+    // set ngày tháng năm trong add task khi ấn nút, mặc định ban đầu là ngày hiện tại
+    const task = document.getElementsByClassName("calendar__day");
+    const taskdate = document.querySelector("span.calendar__add-task--date");
+    const year = document.querySelector("p.calendar__year");
+    const month = document.querySelector("button#prev-btn");
+    taskdate.innerHTML =  (Number(month.value) + 1) + '-' + date.getDate() + '-' + year.innerHTML;
+    for(let i = 0; i< task.length; i++){
+    task[i].addEventListener("click", function(){
+        // alert("aaa");
+        taskdate.innerHTML = (Number(month.value) + 1) + '-' + task[i].innerHTML +  '-' + year.innerHTML;
+    });
+    }
+
+    // const container = document.querySelector("div.calendar__content");
+    // container.addEventListener("click", function(){
+    //     const task = document.querySelector("div.calendar__add-task--container");
+    //     const btn = document.querySelectorAll("button.calendar__add-task-btn");
+    //     HideTask(task, btn);
+    // })
+    
+</script>
+
+</body>
+</html>
