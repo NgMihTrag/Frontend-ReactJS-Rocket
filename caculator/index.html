@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- js -->
+    <script src="./assets/js/script.js"></script>
+    <!-- icon -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"> -->
+
+</head>
+<body>
+<div class="container">
+    <!-- <img src="./assets/img/caculator.png" alt="" class="bg-img"> -->
+
+    <div class="calculator">
+        
+        <div class="history" id="history"></div>
+        <div class="display" id="display">0</div>
+        <div class="keyboard">
+            <button class="button" onclick="percent('%')">%</button>
+            <button class="button" onclick="clearDisplay()">C</button>
+            <button class="button" onclick="del()"><i class="material-icons">backspace</i></button>
+            <button class="button1" onclick="appendtodisplay('/')">/</button>
+            
+            <button class="button" onclick="appendtodisplay('7')">7</button>
+            <button class="button" onclick="appendtodisplay('8')">8</button>
+            <button class="button" onclick="appendtodisplay('9')">9</button>
+            <button class="button1" onclick="appendtodisplay('*')">x</button>
+    
+            <button class="button" onclick="appendtodisplay('4')">4</button>
+            <button class="button" onclick="appendtodisplay('5')">5</button>
+            <button class="button" onclick="appendtodisplay('6')">6</button>
+            <button class="button1" onclick="appendtodisplay('-')">-</button>
+    
+            <button class="button" onclick="appendtodisplay('1')">1</button>
+            <button class="button" onclick="appendtodisplay('2')">2</button>
+            <button class="button" onclick="appendtodisplay('3')">3</button>
+            <button class="button1" onclick="appendtodisplay('+')">+</button>
+    
+            <button class="button" onclick="appendtodisplay('')">+/-</button>
+            <button class="button" onclick="appendtodisplay('0')">0</button>
+            <button class="button" onclick="appendtodisplay('.')">.</button>
+            <button class="button1" style="background-color:#eb8468 ;" onclick="calculate()">=</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
